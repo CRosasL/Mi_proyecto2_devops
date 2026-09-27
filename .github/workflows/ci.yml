@@ -13,5 +13,8 @@ jobs:
             - name: Descargar código
               uses: actions/checkout@v4
 
+            - name: Verificar html
+              run: text -f index.html
+            
             - name: instalar htmlhint
               run: npm install -g htmlhint
