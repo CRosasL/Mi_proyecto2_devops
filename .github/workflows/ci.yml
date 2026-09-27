@@ -1,8 +1,9 @@
 name: Mi primer CI
 
-on::
+on:
     push:
-        - main
+        branches:             
+           - main
 
 jobs:
     verificar:
